@@ -1,0 +1,16 @@
+number = 7
+guesslimit = 3
+guesscount = 0
+win = "You Won!"
+lose = "T_T"
+
+while guesscount < guesslimit:
+    guess = int(input("What is your guess: "))
+    guesscount += 1
+
+    if guess == number:
+        print(win)
+        break
+
+    if guesscount == guesslimit:
+        print(lose)
